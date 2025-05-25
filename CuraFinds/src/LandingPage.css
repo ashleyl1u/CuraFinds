@@ -1,0 +1,157 @@
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #caadad;
+}
+
+.googleButton {
+  width: 100%;
+  background-color: #fff;
+  color: #444;
+  border: 1px solid #ddd;
+  padding: 10px 0;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  transition: background-color 0.2s ease;
+}
+
+.googleButton:hover {
+  background-color: #f5f5f5;
+}
+
+.dividerContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.divider {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.dividerText {
+  margin: 0 8px;
+  color: #888;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.message {
+  margin-bottom: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.message.error {
+  color: #d32f2f;
+}
+
+.message.success {
+  color: #388e3c;
+}
+
+.message.info {
+  color: #1976d2;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.input {
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.input:focus {
+  border-color: #06b6d4;
+  box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.3);
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.checkboxLabel {
+  font-size: 13px;
+  color: #444;
+  user-select: none;
+}
+
+.link {
+  color: #06b6d4;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.submitButton {
+  padding: 12px;
+  background-color: #06b6d4;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #0ea5e9;
+}
+
+.signInText {
+  margin-top: 24px;
+  font-size: 14px;
+  text-align: center;
+  color: #555;
+}
