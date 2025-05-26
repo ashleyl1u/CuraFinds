@@ -1,0 +1,9 @@
+/* reuse the same styles for consistency */
+@import "./SignInPage.css";
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
