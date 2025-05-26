@@ -22,7 +22,6 @@ const SignInPage = () => {
   return (
     <div className="auth-card">
       <h1 className="title">CuraFinds</h1>
-      <p className="subtitle">Discover personalized health insights for chronic conditions</p>
 
       <form onSubmit={handleSignIn} className="auth-form">
         <div>
