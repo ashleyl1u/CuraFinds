@@ -24,19 +24,36 @@ const SignUpPage = () => {
 
   return (
     <div className="auth-card">
-      <h1 className="title">Sign Up</h1>
-      <p className="subtitle">Create your CuraFinds account</p>
-
+      <h1 className="title">CuraFinds</h1>
+      <p className="subtitle">Discover personalized health insights for chronic conditions</p>
+      <h2 className="form-title">Create Account</h2>
       <form onSubmit={handleSignUp} className="auth-form">
-        <div>
-          <label>Name</label>
-          <input
-            type="text"
-            placeholder="Your full name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            className="input-field"
-          />
+        <div className="name-field">
+          <div>
+            <label>First Name</label>
+            <input
+              type="text"
+              placeholder="Your first name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className="input-field"
+            />
+          </div>
+
+          <div>
+            <label>Last Name</label>
+            <input
+              type="text"
+              placeholder="Your last name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className="input-field"
+            />
+          </div>
+          
+
+
+
         </div>
 
         <div>
@@ -54,7 +71,7 @@ const SignUpPage = () => {
           <label>Password</label>
           <input
             type="password"
-            placeholder="Choose a password"
+            placeholder="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             className="input-field"
@@ -79,16 +96,21 @@ const SignUpPage = () => {
           </span>
         </div>
 
-        <button type="submit" className="submit-btn">
-          Sign Up
-        </button>
+        <div>
+          <button type="submit" className="submit-btn">
+            Sign Up
+          </button>
 
-        <p className="switch-text">
-          Already have an account?{" "}
-          <span className="link" onClick={() => navigate("/")}>
-            Sign In
-          </span>
-        </p>
+          <p className="switch-text">
+            Already have an account?{" "}
+            <span className="link" onClick={() => navigate("/")}>
+              Login now.
+            </span>
+          </p>
+
+        </div>
+
+        
       </form>
     </div>
   );

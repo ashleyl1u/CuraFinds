@@ -1,5 +1,8 @@
+
+
+
 .auth-card {
-  max-width: 400px;
+  max-width: 350px;
   margin: 80px auto;
   padding: 40px;
   border-radius: 10px;
@@ -9,15 +12,23 @@
 
 .title {
   text-align: center;
-  font-size: 32px;
-  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #324D3E;
 }
 
 .subtitle {
   text-align: center;
-  font-size: 14px;
+  font-size: 0.7rem;
   color: #666;
-  margin-bottom: 30px;
+  margin-top: 5px;
+  margin-bottom: 35px;
+}
+
+.form-title{
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  font-weight: 700;
 }
 
 .auth-form {
@@ -26,32 +37,51 @@
   gap: 20px;
 }
 
+
+label{
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
 .input-field {
   width: 100%;
   padding: 10px;
-  font-size: 14px;
+  font-size: 0.8rem;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: rgb(147, 147, 147);
+  box-sizing: border-box;
+
 }
 
 .submit-btn {
   width: 100%;
   padding: 10px;
-  background: linear-gradient(to right, #06b6d4, #3b82f6);
+  font-size: 0.8;
+  background: #8EA58B;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 10px;
   cursor: pointer;
+  box-sizing: border-box;
+  margin-top: 15px;
 }
 
 .switch-text {
-  margin-top: 20px;
-  text-align: center;
+  margin-top: 10px;
+  text-align:start;
   font-size: 14px;
+  font-size: 0.7rem;
 }
 
 .link {
-  color: #2563eb;
+  color: #324D3E;
   cursor: pointer;
   text-decoration: underline;
 }
+
+
+
+
