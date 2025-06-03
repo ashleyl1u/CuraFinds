@@ -23,7 +23,7 @@ const SignInPage = () => {
     <div className="auth-card">
       <h1 className="title">CuraFinds</h1>
       <p className="subtitle">Discover personalized health insights for chronic conditions</p>
-
+      <h2 className="form-title">Login</h2>
       <form onSubmit={handleSignIn} className="auth-form">
         <div>
           <label>Email</label>
@@ -40,23 +40,26 @@ const SignInPage = () => {
           <label>Password</label>
           <input
             type="password"
-            placeholder="Your password"
+            placeholder="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             className="input-field"
           />
         </div>
 
-        <button type="submit" className="submit-btn">
-          Sign In
-        </button>
+        <div>
+          <button type="submit" className="submit-btn">
+            Login
+          </button>
 
-        <p className="switch-text">
-          Don't have an account?{" "}
-          <span className="link" onClick={() => navigate("/signup")}>
-            Sign Up
-          </span>
-        </p>
+          <p className="switch-text">
+            Don't have an account?{" "}
+            <span className="link" onClick={() => navigate("/signup")}>
+              Sign up now.
+            </span>
+          </p>
+        </div>
+        
       </form>
     </div>
   );
